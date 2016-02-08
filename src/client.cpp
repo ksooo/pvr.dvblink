@@ -708,14 +708,6 @@ PVR_ERROR GetRecordingEdl(const PVR_RECORDING&, PVR_EDL_ENTRY[], int*)
   return PVR_ERROR_NOT_IMPLEMENTED;
 }
 
-int GetCurrentClientChannel(void)
-{
-  if (dvblinkclient)
-    return dvblinkclient->GetCurrentChannelId();
-
-  return 0;
-}
-
 bool SwitchChannel(const PVR_CHANNEL &channel)
 {
   CloseLiveStream();
