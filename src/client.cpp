@@ -918,4 +918,9 @@ void SetSpeed(int)
 {
 }
 
+PVR_ERROR SetEPGTimeFrame(int)
+{
+  return PVR_ERROR_NOT_IMPLEMENTED;
+}
+
 }
