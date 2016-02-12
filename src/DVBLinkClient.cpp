@@ -827,6 +827,9 @@ PVR_ERROR DVBLinkClient::GetTimers(ADDON_HANDLE handle)
       xbmcTimer.iGenreSubType = genre_subtype;
     }
 
+    /* TODO: PVR API 5.0.0: Implement this */
+    xbmcTimer.iChannelUid = PVR_CHANNEL_INVALID_UID;
+
     PVR->TransferTimerEntry(handle, &xbmcTimer);
     XBMC->Log(LOG_INFO, "Added EPG timer : %s", rec->GetProgram().GetTitle().c_str());
   }
